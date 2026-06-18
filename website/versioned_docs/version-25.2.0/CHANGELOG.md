@@ -2,6 +2,43 @@
 
 Combined changelog for puppeteer and puppeteer-core.
 
+## [25.2.0](https://github.com/puppeteer/puppeteer/compare/puppeteer-v25.1.0...puppeteer-v25.2.0) (2026-06-18)
+
+### 🎉 Features
+
+- add page locale emulation ([#15075](https://github.com/puppeteer/puppeteer/issues/15075)) ([c528f65](https://github.com/puppeteer/puppeteer/commit/c528f6508dcbe830a2bf7b61605ea53b14b56168))
+- add waitForFunction to webWorkers ([#15100](https://github.com/puppeteer/puppeteer/issues/15100)) ([0bdfa77](https://github.com/puppeteer/puppeteer/commit/0bdfa77b1244f4a397e22fc1ed4d9cf6eabe2697))
+- allow extensions to run over websockets ([#15059](https://github.com/puppeteer/puppeteer/issues/15059)) ([b84d8a1](https://github.com/puppeteer/puppeteer/commit/b84d8a18584fcf54670fff169408b8ac712d8c06))
+- roll to Chrome 150.0.7871.24 ([#15126](https://github.com/puppeteer/puppeteer/issues/15126)) ([b74ed1c](https://github.com/puppeteer/puppeteer/commit/b74ed1c81caffa7c727b8e21498dda42899467ed))
+- roll to Firefox 152.0 ([#15125](https://github.com/puppeteer/puppeteer/issues/15125)) ([87be906](https://github.com/puppeteer/puppeteer/commit/87be90674742650fd0bcb138922ff61d2bf2ca98))
+
+### 🛠️ Fixes
+
+- await for Worker script exection ([#15099](https://github.com/puppeteer/puppeteer/issues/15099)) ([dc469b8](https://github.com/puppeteer/puppeteer/commit/dc469b8aae9008b8ec665014d4fac9e13c8a0650))
+- correct screencast frame timing so playback matches real time ([#15112](https://github.com/puppeteer/puppeteer/issues/15112)) ([525b384](https://github.com/puppeteer/puppeteer/commit/525b3843bb4920abe2142c1ae381fb2384d9d2dc))
+- **webmcp:** invalidate webmcp tools on context destruction ([#15068](https://github.com/puppeteer/puppeteer/issues/15068)) ([8e9c0fa](https://github.com/puppeteer/puppeteer/commit/8e9c0fa4ac4054f3f31868f17761c73335229306))
+
+### Dependencies
+
+- The following workspace dependencies were updated
+  - dependencies
+    - @puppeteer/browsers bumped from 3.0.4 to 3.0.5
+
+### 📄 Documentation
+
+- Update Page.target deprecation message to cover broader usage. ([#15108](https://github.com/puppeteer/puppeteer/issues/15108)) ([882c43d](https://github.com/puppeteer/puppeteer/commit/882c43d57698596921d83b56ef82b666ad0528c5))
+
+### ⚡ Performance
+
+- **cdp:** parallelize extension workers fetching ([#15057](https://github.com/puppeteer/puppeteer/issues/15057)) ([fdee509](https://github.com/puppeteer/puppeteer/commit/fdee509f47f1587f17cf25b176a50d5d8fcde38a))
+- optimize `headersArray` iteration in HTTPRequest ([#15004](https://github.com/puppeteer/puppeteer/issues/15004)) ([eb95798](https://github.com/puppeteer/puppeteer/commit/eb9579844f071c2aa8ad1a0c19443b618fac63b7))
+- optimize property descriptors iteration in JSHandle ([#15094](https://github.com/puppeteer/puppeteer/issues/15094)) ([2483b65](https://github.com/puppeteer/puppeteer/commit/2483b656cd17b99af089087094a0e6f88c6ba4fb))
+- parallelize iframe population in accessibility snapshots ([#15083](https://github.com/puppeteer/puppeteer/issues/15083)) ([7e3d42e](https://github.com/puppeteer/puppeteer/commit/7e3d42ec56c017978ca780af394ac4e5cf5391fd))
+
+### 🏗️ Refactor
+
+- sync accessing debugger ([#15066](https://github.com/puppeteer/puppeteer/issues/15066)) ([9046239](https://github.com/puppeteer/puppeteer/commit/904623947f270e50243c3f7fb74f4aef3245c22d))
+
 ## [25.1.0](https://github.com/puppeteer/puppeteer/compare/puppeteer-v25.0.4...puppeteer-v25.1.0) (2026-05-26)
 
 ### 🎉 Features
